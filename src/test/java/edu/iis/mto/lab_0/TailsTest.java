@@ -42,7 +42,8 @@ public class TailsTest {
     @Test
     public void tailsShouldReturnPartOfString() {
 
-        assertThat(tails.get(tails.size() - 3), Matchers.equalTo(HELLO.substring(HELLO.length() - 2, HELLO.length())));
+        String testString = "lo";
+        assertThat(tails.get(tails.size() - 3), Matchers.equalTo(testString));
     }
 
 }
